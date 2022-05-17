@@ -1,0 +1,147 @@
+* {box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    width: 350px;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px ;
+    margin: 20px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    position: relative;
+}
+
+.card-content .image-container {
+    width: 100%;
+    position: relative;
+}
+
+.card-content .image-container .nft-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .3s ease;
+    background: hsla(178, 100%, 50%, 0.5);
+    border-radius: 1rem;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.view:hover {
+    cursor: pointer;
+}
+
+
+
+.card-content h1 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.card-content h1:hover {
+    transition: .3s ease;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-content p {
+    font-size: 1.4rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.card-content .description {
+    margin-bottom: 0;
+    line-height: 3rem;
+}
+
+.card-content .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content i {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px 0 0;
+}
+
+/* .card-content .card-price p {margin: 0;} */
+
+.card-content .card-price .price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.card-content .card-price .price i {
+    content: url(./images/icon-ethereum.svg);
+    width: 11%;
+    top: 2px;
+}
+
+.card-content .card-price .left i {
+    content: url(./images/icon-clock.svg);
+    width: 15%;
+    top: 0px;
+}
+
+.card-content .author {border-top: 1px solid hsl(215, 32%, 27%);}
+
+.card-content .author i {
+    content: url(./images/image-avatar.png);
+    border: solid 1px white;
+    border-radius: 100%;
+    margin: 5px 10px 0 0;
+    top: 7px;
+    width: 10%;
+}
+
+.card-content .author span {color: white;}
+.card-content .author span:hover {
+    transition: .3s ease;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
