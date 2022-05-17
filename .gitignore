@@ -15,5 +15,5 @@
 .DS_Store
 .prettierignore
 nft-preview-card-component-main.zip
-/design
-/images
+#/design
+#/images
